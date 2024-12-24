@@ -16,7 +16,7 @@ const Login = () => {
     const message = checkValidData(
       email.current.value,
       password.current.value,
-      name.current.value
+      name.current && name.current.value ? name.current.value : null
     );
     //   console.log(message);
     setErrorMessage(message);
